@@ -3,7 +3,7 @@ echo "Available DataBases"
 ls -1 data/
 read -p "Enter DataBase Name: " db
 if [[ -d data/$db ]]; then
-	select varuse in "create table" "drop table" "update table" "insert record" "Delete from table" "Select from table"
+	select varuse in "create table" "drop table" "insert record"  "Select from table"
 	do
 		case $varuse in
 			"create table" )	
